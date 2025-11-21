@@ -16,5 +16,3 @@ function recursiveSumUp(n) {
 
   return n + recursiveSumUp(n - 1);
 }
-
-console.log(sumUp(100));
