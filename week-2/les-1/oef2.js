@@ -4,5 +4,8 @@ Look up for yourself how to convert from fahrenheit to celsius.
 Round the temperatures in celsius to 2 decimals. 
 e.g. [90, 80, 70] -> [32.22, 26.67, 21.11] */
 function mapTemperaturesToCelsius(temperatures) {
-  // Go!
+  return temperatures.map((num) => {
+    return parseFloat((((num - 32) * 5) / 9).toFixed(2));
+  });
 }
+console.log(mapTemperaturesToCelsius([90, 80, 70]));
