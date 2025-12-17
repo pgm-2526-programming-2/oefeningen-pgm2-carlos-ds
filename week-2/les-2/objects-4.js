@@ -8,6 +8,7 @@ const shoppingCart = {
 
   // Aangepaste methode om totale prijs te berekenen
   calculateTotal: function () {
+    s;
     return this.items.reduce(
       (previousValue, currentValue) => previousValue + currentValue.price,
       0
